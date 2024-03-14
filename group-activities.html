@@ -8,25 +8,41 @@
         body {
             font-family: Arial, sans-serif;
             margin: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         header, footer {
             text-align: center;
             margin: 20px 0;
         }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #000;
-        }
-        .content {
+        .link-blocks {
+            display: flex;
+            justify-content: center;
             margin-top: 20px;
+        }
+        .link-block {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            width: 200px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .link-block:hover {
+            background-color: #0056b3;
+            cursor: pointer;
+        }
+        .link-block a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        footer {
+            margin-top: auto;
         }
     </style>
 </head>
@@ -34,16 +50,14 @@
     <header>
         <h1>Group Activities</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="group-members.html">Group Members</a></li>
-            <li><a href="research-areas.html">Research Areas</a></li>
-        </ul>
-    </nav>
+    <div class="link-blocks">
+        <div class="link-block"><a href="index.html">Home</a></div>
+        <div class="link-block"><a href="group-members.html">Group Members</a></div>
+        <div class="link-block"><a href="research-areas.html">Research Areas</a></div>
+    </div>
     <div class="content">
         <h2>Our Team Building</h2>
-        <p>We like bowling! Bowling is one of our favorite group activities. It's a great way for us to relax, have fun, and engage in a little friendly competition outside of the lab. These bowling outings help strengthen our team spirit and foster collaboration among team members. Stay tuned for updates on our next bowling event!</p>
+        <p>We like bowling! Bowling is one of our favorite group activities...</p>
     </div>
     <footer>
         <p>&copy; 2024 Physics Laboratory. All rights reserved.</p>
