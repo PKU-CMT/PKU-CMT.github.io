@@ -3,48 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group Members - Physics Laboratory</title>
+    <title>Group Members - Huang group</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 40px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
         header, footer {
             text-align: center;
             margin: 20px 0;
-        }
-        .link-blocks {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .link-block {
-            display: inline-block; /* Makes the link fill the space of its container */
-            background-color: #007bff;
-            color: white;
-            padding: 20px;
-            margin: 10px;
-            text-align: center;
-            width: 200px; /* Adjust the width as needed */
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            text-decoration: none; /* Removes the underline from the text */
-            font-size: 18px;
-            font-weight: bold;
-        }
-        
-        .link-block:hover {
-            background-color: #0056b3;
-            cursor: pointer;
-        }
-        .link-block a {
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
-            font-weight: bold;
         }
         .member-list {
             list-style-type: none;
@@ -53,8 +20,10 @@
         .member-list li {
             margin-bottom: 10px;
         }
-        footer {
-            margin-top: auto;
+        .category-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -62,24 +31,38 @@
     <header>
         <h1>Group Members</h1>
     </header>
-    <div class="link-blocks">
-        <a href="index.html" class="link-block">Home</a>
-        <a href="research-areas.html" class="link-block">Research Areas</a>
-        <a href="group-activities.html" class="link-block">Group Activities</a>
-    </div>
     <div class="content">
         <h2>Our Team</h2>
-        <ul class="member-list">
-            <li>Dexin Li</li>
-            <li>Junyan Ma</li>
-            <li>Jiahao Fan</li>
-            <li>Mingxiang Pan</li>
-            <li>Citian Wang</li>
-            <li>Guozhi Long</li>
-            <li>Zishan Liao</li>
-            <li>Jizhang Wang</li>
-            <li>Erqing Wang</li>
-        </ul>
+        
+        <div class="category">
+            <p class="category-title">Principal Investigator</p>
+            <ul class="member-list">
+                <li>Huaqing Huang</li>
+            </ul>
+        </div>
+        
+        <div class="category">
+            <p class="category-title">Postdoc</p>
+            <ul class="member-list">
+                <li>Jizhang Wang</li>
+                <li>Erqing Wang</li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <p class="category-title">PhD</p>
+            <ul class="member-list">
+                <li>Dexin Li</li>
+                <li>Junyan Ma</li>
+                <li>Jiahao Fan</li>
+                <li>Mingxiang Pan</li>
+                <li>Citian Wang</li>
+                <li>Guozhi Long</li>
+                <li>Zishan Liao</li>
+                <li>Wuping Yang</li>
+                <li>Zixiang Zhao</li>
+            </ul>
+        </div>
     </div>
     <footer>
         <p>&copy; 2024 Physics Laboratory. All rights reserved.</p>
