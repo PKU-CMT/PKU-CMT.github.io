@@ -22,15 +22,20 @@
             margin-top: 20px;
         }
         .link-block {
+            display: inline-block; /* Makes the link fill the space of its container */
             background-color: #007bff;
             color: white;
             padding: 20px;
             margin: 10px;
             text-align: center;
-            width: 200px;
+            width: 200px; /* Adjust the width as needed */
             border-radius: 5px;
             transition: background-color 0.3s ease;
+            text-decoration: none; /* Removes the underline from the text */
+            font-size: 18px;
+            font-weight: bold;
         }
+        
         .link-block:hover {
             background-color: #0056b3;
             cursor: pointer;
@@ -51,9 +56,9 @@
         <h1>Group Activities</h1>
     </header>
     <div class="link-blocks">
-        <div class="link-block"><a href="index.html">Home</a></div>
-        <div class="link-block"><a href="group-members.html">Group Members</a></div>
-        <div class="link-block"><a href="research-areas.html">Research Areas</a></div>
+        <a href="index.html" class="link-block">Home</a>
+        <a href="group-members.html" class="link-block">Group Members</a>
+        <a href="research-areas.html" class="link-block">Research Areas</a>
     </div>
     <div class="content">
         <h2>Our Team Building</h2>
