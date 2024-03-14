@@ -3,57 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Website</title>
+    <title>Physics Laboratory</title>
     <style>
-        /* Basic styling */
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            margin: 40px;
         }
-        header, nav, footer {
-            background-color: #333;
-            color: white;
+        header, footer {
             text-align: center;
-            padding: 1em;
+            margin: 20px 0;
         }
         nav ul {
             list-style-type: none;
             padding: 0;
         }
-        nav ul a {
-            color: white;
-            text-decoration: none;
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
         }
-        article {
-            margin: 20px;
-            padding: 20px;
-            background-color: white;
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+        .content {
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Simple Website</h1>
+        <h1>Welcome to Our Physics Laboratory</h1>
     </header>
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="group-members.html">Group Members</a></li>
+            <li><a href="research-areas.html">Research Areas</a></li>
+            <li><a href="group-activities.html">Group Activities</a></li>
         </ul>
     </nav>
-    <main>
-        <article>
-            <h2>Article Title</h2>
-            <p>This is an example paragraph for our main content. Here, you can write about anything related to your website. You could describe your services, share news, or introduce your team. The possibilities are endless!</p>
-            <p>Remember to keep your paragraphs easy to read. Breaking your content into manageable chunks helps your visitors to understand your message better.</p>
-        </article>
-    </main>
+    <div class="content">
+        <p>Welcome to the homepage of our Physics Laboratory. Explore our website to learn more about our team, research focus, and activities.</p>
+    </div>
     <footer>
-        <p>&copy; 2024 My Simple Website</p>
+        <p>&copy; 2024 Physics Laboratory. All rights reserved.</p>
     </footer>
 </body>
 </html>
