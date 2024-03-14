@@ -19,19 +19,20 @@
         .link-blocks {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             margin-top: 20px;
         }
         .link-block {
-            display: inline-block; /* Makes the link fill the space of its container */
             background-color: #007bff;
             color: white;
             padding: 20px;
             margin: 10px;
             text-align: center;
-            width: 200px; /* Adjust the width as needed */
+            width: 200px;
             border-radius: 5px;
             transition: background-color 0.3s ease;
-            text-decoration: none; /* Removes the underline from the text */
+            display: inline-block;
+            text-decoration: none;
             font-size: 18px;
             font-weight: bold;
         }
@@ -39,20 +40,15 @@
             background-color: #0056b3;
             cursor: pointer;
         }
-        .link-block a {
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        footer {
-            margin-top: auto;
+        .svg-container {
+            margin-top: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Huang's Group at Peking University</h1>
+        <h1>Welcome to Our Physics Laboratory</h1>
     </header>
     <div class="link-blocks">
         <a href="group-members.html" class="link-block">Group Members</a>
