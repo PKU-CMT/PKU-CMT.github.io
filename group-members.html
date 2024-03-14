@@ -8,25 +8,38 @@
         body {
             font-family: Arial, sans-serif;
             margin: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         header, footer {
             text-align: center;
             margin: 20px 0;
         }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #000;
-        }
-        .content {
+        .link-blocks {
+            display: flex;
+            justify-content: center;
             margin-top: 20px;
+        }
+        .link-block {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            width: 200px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .link-block:hover {
+            background-color: #0056b3;
+            cursor: pointer;
+        }
+        .link-block a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
         }
         .member-list {
             list-style-type: none;
@@ -35,19 +48,20 @@
         .member-list li {
             margin-bottom: 10px;
         }
+        footer {
+            margin-top: auto;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Group Members</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="research-areas.html">Research Areas</a></li>
-            <li><a href="group-activities.html">Group Activities</a></li>
-        </ul>
-    </nav>
+    <div class="link-blocks">
+        <div class="link-block"><a href="index.html">Home</a></div>
+        <div class="link-block"><a href="research-areas.html">Research Areas</a></div>
+        <div class="link-block"><a href="group-activities.html">Group Activities</a></div>
+    </div>
     <div class="content">
         <h2>Our Team</h2>
         <ul class="member-list">
